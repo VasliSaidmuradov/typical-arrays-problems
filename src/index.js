@@ -1,12 +1,18 @@
 
 exports.min = function min (array) {
-  return 0;
+  let res = 0
+  !array || !array.length ? res : res = Math.min(...array)
+  return res
 }
 
 exports.max = function max (array) {
-  return 0;
+  let res = 0
+  !array || !array.length ? res : res = Math.max(...array)
+  return res
 }
 
 exports.avg = function avg (array) {
-  return 0;
+  let res = 0
+  !array || !array.length ? res : res = (array.reduce((acc, el) => acc + el, 0) / array.length)
+  return res;
 }
